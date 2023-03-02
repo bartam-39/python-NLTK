@@ -1,5 +1,0 @@
-{
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/home/vscode/.local/bin/black",
-  "python.defaultInterpreterPath": "/usr/local/bin/python3"
-}
