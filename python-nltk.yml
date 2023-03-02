@@ -1,0 +1,16 @@
+name: python-nltk
+channels:
+  - conda-forge
+  - defaults
+  - fastai
+  - pytorch
+dependencies:
+  - numpy
+  - scipy
+  - jupyter
+  - matplotlib
+  - Pillow
+  - scikit-learn
+  - pandas
+  - black
+  - nltk

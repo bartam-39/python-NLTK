@@ -1,17 +1,22 @@
-# Python Natural Language Processing with NLTK
+# Python NLTK Notebook
 
-This repository use NLTK to implement some of the most popular NLP algorithms.
-Additionally, we run the application inside a Docker container. This is not mandatory, you can use python venv instead.
-If you like to run the code in a container you need the following:
-- docker installed in your local machine,
-- vscode extension ms-vscode-remote.remote-containers installed in your vscode, to boot the dev containers.
+This notebook uses machine learning algorithms
 
-Otherwise, you simply need to create a venv and then pip install the requirements.txt file.
+## Setup
 
-## Installing NLTK Data
+- Install [Anaconda](https://www.anaconda.com/)
+- Set the channel priority to strict to avoid issues with the environment creation taking forever.
+  - `conda config --set channel_priority strict`
+- Run the following commands (in either the terminal or an Anaconda Prompt):
+  - `conda env create -f python-nltk.yml`
+  - `conda activate python-nltk`
+  - `conda install python=3`
+- In VS Code, open the [Titanic.ipynb](Titanic.ipynb) file and connect to the golden_scenario_env kernel
 
-After installing the NLTK package, please do install the necessary datasets/models for specific functions to work.
+You need to setup the environment as an `ipykernel` to use it from the Jupyter notebook. To do it run inside of the conda activated environment:
 
-If you’re unsure of which datasets/models you’ll need, you can install the “popular” subset of NLTK data, on the command line type python -m nltk.downloader popular, or in the Python interpreter import nltk; nltk.download('popular')
+`python -m ipykernel install --user --name golden_scenario_env --display-name "Golden Scenario Env"`
 
-For details, see https://www.nltk.org/data.html
+Also if you want to support PDF export from jupyter you need to setup LaTeX:
+
+`sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic`
