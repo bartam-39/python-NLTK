@@ -1,6 +1,6 @@
-# Python Natural Language Processing with Tensorflow
+# Python Natural Language Processing with NLTK
 
-This repository use Tensorflow to implement some of the most popular NLP algorithms.
+This repository use NLTK to implement some of the most popular NLP algorithms.
 Additionally, we run the application inside a Docker container. This is not mandatory, you can use python venv instead.
 If you like to run the code in a container you need the following:
 - docker installed in your local machine,
